@@ -19,14 +19,14 @@ Multiple additional considerations were taken as this data is multi-class and sl
 
 ### Data
 
-Kaggle: [This dataset] (https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data_w_genres.csv) originally from the Spotify API and sourced from Kaggle was used for this project. 
+Kaggle: [This dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data_w_genres.csv) originally from the Spotify API and sourced from Kaggle was used for this project. 
 The original dataset measured popularity on a scale of 1-100, which were grouped into three classes - unsuccessful, successful, and very successful - based on popularity quartiles for this project. The results displayed below are the result of standardization as well as normalization of the original data.   
 
 ## Findings 
 
 Of all the songs released, only a small percentage are considered very successful. In fact, as seen below, most songs are unsuccessful. This reinforces the importance of the stakeholder's need for a better process to focus on songs that are likely to be successful.
 
-![popularity_boxplot](images/popularity_boxplot.png)  ![success_label_hist](images/sucess_label_hist)
+![popularity_boxplot](images/popularity_boxplot.png)  ![success_label_hist](images/sucess_label_hist.png)
 
 Determining why a person likes or dislikes a song is completely subjective and difficult to measure, which is why it seemed important to ascertain which features were most important, or most influential, for a song's success. After using logistic regression to model this data, analyzing the coeffcient scores for each feature gave a clear view of each feature's importance. 
 The three most important features to a song's success are as follows: 
@@ -49,11 +49,11 @@ True Positive Rates:
 2. Successful: 37%
 3. Very Successful: 44% 
 
-![preSMOTE_CM](images/preSMOTE_CM.png)
+![preSMOTE_CM](images/PreSMOTE_CM.png)
 
 Using SMOTE (Synthetic Minority Oversampling TEchnique) to create an artifically balanced dataset, the TPR was much more balanced across all classes. All classes had a TPR of around 56 - 65% after applying SMOTE. Although the Unsuccessful class has a lower recall score with this model iteration, an increase of 19% (Successful) and 18% (Very Successful) in the other two classes makes this a more successful model for the stakeholders overall as more songs with the potential for success are being captured. 
 
-![final_CM](images/final_CM)
+![final_CM](images/final_CM.png)   ![final_metrics](images/final_metrics.PNG)
 
 ## Recommendations 
 
@@ -69,4 +69,4 @@ Going forward, decision thresholds can be re-evaluated to possibly create a more
 
 Please feel free to review the code behind this project in the Jupyter Notebooks and view the non-technical presentation. 
 
-Kindly reach out with any questions and connect with me on [LinkedIn] (https://www.linkedin.com/in/dana-rausch-b73538a6/)
+Kindly reach out with any questions and connect with me on [LinkedIn](https://www.linkedin.com/in/dana-rausch-b73538a6/)
