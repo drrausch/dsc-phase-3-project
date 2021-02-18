@@ -1,7 +1,7 @@
 # Determining Song Success | Classification Modeling
 by: Dana Rausch
 
-![records](images/records.png)
+![records](images/records.jpeg)
 
 ## Business Problem
 
@@ -55,7 +55,7 @@ True Positive Rates:
 
 Using SMOTE (Synthetic Minority Oversampling TEchnique) to create an artifically balanced dataset, the TPR was much more balanced across all classes. All classes had a TPR of around 56 - 65% after applying SMOTE. Although the Unsuccessful class has a lower recall score with this model iteration, an increase of 19% (Successful) and 18% (Very Successful) in the other two classes makes this a more successful model for the stakeholders overall as more songs with the potential for success are being captured. 
 
-![final_CM](images/final_CM.png)   <img src="image/final_metrics.PNG" width = "100">
+![final_CM](images/final_CM.png)   ![final_metrics](images/final_metrics.png)
 
 ## Recommendations 
 
