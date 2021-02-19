@@ -59,7 +59,12 @@ Using SMOTE (Synthetic Minority Oversampling TEchnique) to create an artifically
 
 ## Recommendations 
 
-As this model cannot predict all classes with high accuracy, it would be best to consider all songs marked as 'very successful' as well as 'successful' worthy of evaluation. This also means that all songs classed as 'unsuccessful' can be ignored as their chance for success is quite low. For feature-based suggestions on what makes a song successful, a genre-based model is recommended as a model with a clearer point of view and narrower field will yield more successful results. 
+As this model cannot predict all three classes with high accuracy, it would be best to consider all songs marked as 'very successful' as well as 'successful' worthy of evaluation. This also means that all songs classed as 'unsuccessful' can be ignored as their chance for success is quite low. For feature-based suggestions on what makes a song successful, a genre-based model is recommended as a model with a clearer point of view and narrower field will yield more successful results. 
+
+Recommendations: 
+1. Consider for evaluation all songs classed as 'Successful' and 'Very Successful' 
+2. Do not evaluate songs classed as 'Unsuccessful' in an effort to maximize time and streamline the process
+3. Build genre-specific models for more specific, feature based recommendations 
 
 ## Conclusion and Future Work
 
